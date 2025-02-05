@@ -22,7 +22,7 @@
 
 <br/>
  ## 🎞 MVC(Model-View-Controller) 아키텍처
-![erp](https://github.com/user-attachments/assets/27de9321-7ac3-4b4a-a3c2-88bcf00d995d)
+
 
 <br/>
 
