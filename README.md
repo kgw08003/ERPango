@@ -2,7 +2,6 @@
 <h1 align="left">ERPango</h1>
 <h3 align="left">django ERP 프로젝트, ERPango</h3>
 
-<br/>
 ## 🚀 프로젝트 기간
 - 2025.02.01 ~ 2025.02.05
 
