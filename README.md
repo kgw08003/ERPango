@@ -19,9 +19,10 @@
 
 <br/>
 ## 🎞 Website Design
-![image](https://github.com/user-attachments/assets/48fe160e-e6b4-49d6-9e55-cc0db359361a)
-![image](https://github.com/user-attachments/assets/e75a8a1c-b1c4-4b25-b8d1-7568f95f05db)
+![1](https://github.com/user-attachments/assets/fd59b7b6-a616-40ab-8743-96883525bf2d)
+![2](https://github.com/user-attachments/assets/64137cad-6a26-4989-b6db-2e1b8cf3db06)
 
+<br/>
  ## 🎞 MVC(Model-View-Controller) 아키텍처
 ![erp](https://github.com/user-attachments/assets/27de9321-7ac3-4b4a-a3c2-88bcf00d995d)
 
