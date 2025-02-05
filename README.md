@@ -6,6 +6,7 @@
 
 ## 📝 프로젝트 소개
 - 
+
 <br/>
 
 ## 🌁 프로젝트 배경
@@ -18,10 +19,44 @@
 <br/>
 
 ## ⭐ 주요 기능
-### 메인페이지
+### 메인페이지 (관리자)
+![스크린샷 2025-02-05 151252](https://github.com/user-attachments/assets/185780f9-1e35-4ff7-a741-18f2f693b250)
+
+### staff 페이지 (관리자)
+![스크린샷 2025-02-05 151311](https://github.com/user-attachments/assets/a672310a-b731-4967-90cc-d6a738ac7369)
+
+### staff 페이지 디테일_스텝 프로필 확인 (관리자)
+![스크린샷 2025-02-05 152522](https://github.com/user-attachments/assets/7077d93c-b18e-4483-a100-83e7009e036f)
+
+### product 페이지 (관리자)
+![스크린샷 2025-02-05 152233](https://github.com/user-attachments/assets/e1f51662-5fe0-4d93-bf41-cbf97e9d0ab5)
+
+### order 페이지 (관리자)
+![스크린샷 2025-02-05 152250](https://github.com/user-attachments/assets/3b75c037-354f-4ebc-b3d4-e1fe7d2db8b6)
+
+## 공통 페이지
+### 프로필 페이지 (공통)
+![스크린샷 2025-02-05 152607](https://github.com/user-attachments/assets/fb103dab-eec1-42ab-a4e5-8845ae543efb)
+
+### 프로필 내 개인정보 수정 (공통)
+![스크린샷 2025-02-05 152622](https://github.com/user-attachments/assets/1c6fe6f2-959d-427b-acc5-cc4cbf4e18fb)
+
+### 회원가입 (공통)
+![스크린샷 2025-02-05 152640](https://github.com/user-attachments/assets/19ce60ba-8a14-4d7a-83d4-ecce14f7a837)
+
+### 로그인 페이지 (공통)
+![스크린샷 2025-02-05 152657](https://github.com/user-attachments/assets/d5f40722-5737-46a0-abfb-b60f790c2a0b)
+
+### 이메일로 비밀번호 찾기 기능 (공통)
+![스크린샷 2025-02-05 152710](https://github.com/user-attachments/assets/356607a0-cd85-42c9-9b0d-ed90aad516e9)
+
+## 유저
+### 유저 주문 페이지
+![스크린샷 2025-02-05 152545](https://github.com/user-attachments/assets/3f59ee34-3a47-4224-ac93-eb728f7a1ec4)
 
 
 ## 🔨 프로젝트 설계
+
 
 <br/>
 
