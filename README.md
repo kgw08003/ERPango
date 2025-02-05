@@ -19,6 +19,8 @@
 
 
 ## 🎞 Website Design
+![1](https://github.com/user-attachments/assets/4ebc19e0-7c67-4c93-872f-2f925dd6d06f)
+![2](https://github.com/user-attachments/assets/216fe036-bc06-4593-baea-8b29b81faf79)
 
 
  ## 🎞 MVC(Model-View-Controller) 아키텍처
