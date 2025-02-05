@@ -1,6 +1,6 @@
 
 <h1 align="left">ERPango</h1>
-<h3 align="left">django ERP 포로젝트, ERPango</h3>
+<h3 align="left">django ERP 프로젝트, ERPango</h3>
 
 <br/>
 
