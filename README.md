@@ -17,16 +17,14 @@
 ## 🌁 프로젝트 배경
 -  ERP(전사적 자원 관리) 시스템의 대시보드를 직접 구현해 보고자 시작한 프로젝트입니다. 짧은 기간 동안 ERP의 전반적인 구조를 이해하고, 핵심 기능을 직접 설계 및 구현하는 데 초점을 맞추었습니다. 이를 통해 ERP 시스템의 핵심 개념을 실무적으로 적용해 보고, 효율적인 데이터 관리와 프로세스 자동화에 대한 인사이트를 얻는 것을 목표로 했습니다. 🚀
 
-
-## 🎞 Website Design
-![1](https://github.com/user-attachments/assets/4ebc19e0-7c67-4c93-872f-2f925dd6d06f)
-![2](https://github.com/user-attachments/assets/216fe036-bc06-4593-baea-8b29b81faf79)
-
-
  ## 🎞 MVC(Model-View-Controller) 아키텍처
 ![erp](https://github.com/user-attachments/assets/a45f88dc-6bfe-48b0-8349-78fb8026447c)
 
 
+## 🎞 Website Design
+![1](https://github.com/user-attachments/assets/4ebc19e0-7c67-4c93-872f-2f925dd6d06f)
+
+![2](https://github.com/user-attachments/assets/216fe036-bc06-4593-baea-8b29b81faf79)
 
 
 ## ⭐ 주요 기능
