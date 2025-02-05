@@ -57,8 +57,9 @@
 ![스크린샷 2025-02-05 152657](https://github.com/user-attachments/assets/d5f40722-5737-46a0-abfb-b60f790c2a0b)
 
 ### 이메일로 비밀번호 찾기 기능 (공통)
+![스크린샷 2025-02-05 152710](https://github.com/user-attachments/assets/81e80f25-435e-406d-9f31-bb103e324f45)
 
-
+![스크린샷 2025-02-05 161637](https://github.com/user-attachments/assets/a5b300a3-7da6-4022-aacf-bfe7b39faff1)
 
 
 ## 🔧 Stack
