@@ -6,7 +6,7 @@
 {% if user.is_authenticated and user.is_staff and user.is_superuser %}
 {% include 'partials/topnav.html' %}
 
-<!--Graphs-->
+<!-- Graphs -->
 <div class="container">
     <div class="row my-5">
         <div class="col-md-6">
@@ -14,52 +14,42 @@
                 <canvas id="myChart1" width="400" height="300"></canvas>
                 <script>
                     var ctx = document.getElementById('myChart1').getContext('2d');
+
+                    var orderLabels = [{% for order in orders %} '{{ order.product.name }}', {% endfor %}];
+                    var orderData = [{% for order in orders %} {{ order.order_quantity }}, {% endfor %}];
+
+                    // 🎨 랜덤 색상 생성 함수
+                    function getRandomColor() {
+                        return `rgba(${Math.floor(Math.random() * 256)}, 
+                                     ${Math.floor(Math.random() * 256)}, 
+                                     ${Math.floor(Math.random() * 256)}, 
+                                     1)`;
+                    }
+
+                    // 📌 LocalStorage에서 기존 색상 가져오기
+                    let storedOrderColors = JSON.parse(localStorage.getItem('orderColors')) || {};
+
+                    // 새로 추가된 항목만 랜덤 색상 생성
+                    orderLabels.forEach(label => {
+                        if (!storedOrderColors[label]) {
+                            storedOrderColors[label] = getRandomColor();
+                        }
+                    });
+
+                    // 색상 업데이트 후 다시 저장
+                    localStorage.setItem('orderColors', JSON.stringify(storedOrderColors));
+
                     var myChart1 = new Chart(ctx, {
                         type: 'pie',
                         data: {
-                                labels: [{% for order in orders %} '{{ order.product.name }}', {% endfor %}],
+                            labels: orderLabels,
                             datasets: [{
                                 label: 'Orders',
-                                data: [{% for order in orders %} {{ order.order_quantity }}, {% endfor %}],
-                                backgroundColor: [
-                                    'rgba(255, 99, 132, 1)',
-                                    'rgba(54, 162, 235, 1)',
-                                    'rgba(255, 206, 86, 1)',
-                                    'rgba(75, 192, 192, 1)',
-                                    'rgba(153, 102, 255, 1)',
-                                    'rgba(255, 159, 64, 1)',
-                                    'rgba(211, 99, 12, 1)',
-                                    'rgba(234, 162, 235, 1)',
-                                    'rgba(255, 206, 86, 1)',
-                                    'rgba(34, 142, 192, 1)',
-                                    'rgba(153, 102, 255, 1)',
-                                    'rgba(255, 159, 68, 1)'
-                                ],
-                                borderColor: [
-                                    'rgba(255, 99, 132, 1)',
-                                    'rgba(54, 162, 235, 1)',
-                                    'rgba(255, 206, 86, 1)',
-                                    'rgba(75, 192, 192, 1)',
-                                    'rgba(153, 102, 255, 1)',
-                                    'rgba(255, 159, 64, 1)',
-                                    'rgba(211, 99, 12, 1)',
-                                    'rgba(234, 162, 235, 1)',
-                                    'rgba(255, 206, 86, 1)',
-                                    'rgba(34, 142, 192, 1)',
-                                    'rgba(153, 102, 255, 1)',
-                                    'rgba(255, 159, 68, 1)'
-                                ],
+                                data: orderData,
+                                backgroundColor: orderLabels.map(label => storedOrderColors[label]),
+                                borderColor: orderLabels.map(label => storedOrderColors[label]),
                                 borderWidth: 1
                             }]
-                        },
-                        options: {
-                            scales: {
-                                yAxes: [{
-                                    ticks: {
-                                        beginAtZero: true
-                                    }
-                                }]
-                            }
                         }
                     });
                 </script>
@@ -70,52 +60,34 @@
                 <canvas id="myChart" width="400" height="300"></canvas>
                 <script>
                     var ctx = document.getElementById('myChart').getContext('2d');
+
+                    var productLabels = [{% for product in products %} '{{ product.name }}', {% endfor %}];
+                    var productData = [{% for product in products %} {{ product.quantity }}, {% endfor %}];
+
+                    // 📌 LocalStorage에서 기존 색상 가져오기
+                    let storedProductColors = JSON.parse(localStorage.getItem('productColors')) || {};
+
+                    // 새로 추가된 항목만 랜덤 색상 생성
+                    productLabels.forEach(label => {
+                        if (!storedProductColors[label]) {
+                            storedProductColors[label] = getRandomColor();
+                        }
+                    });
+
+                    // 색상 업데이트 후 다시 저장
+                    localStorage.setItem('productColors', JSON.stringify(storedProductColors));
+
                     var myChart = new Chart(ctx, {
                         type: 'bar',
                         data: {
-                            labels: [{% for product in products %} '{{ product.name }}', {% endfor %}],
+                            labels: productLabels,
                             datasets: [{
                                 label: 'Products',
-                                data: [{% for product in products %} {{ product.quantity }}, {% endfor %}],
-                                backgroundColor: [
-                                    'rgba(211, 99, 12, 1)',
-                                    'rgba(234, 162, 235, 1)',
-                                    'rgba(255, 206, 86, 1)',
-                                    'rgba(34, 142, 192, 1)',
-                                    'rgba(153, 102, 255, 1)',
-                                    'rgba(255, 159, 68, 1)',
-                                    'rgba(255, 99, 132, 1)',
-                                    'rgba(54, 162, 235, 1)',
-                                    'rgba(255, 206, 86, 1)',
-                                    'rgba(75, 192, 192, 1)',
-                                    'rgba(153, 102, 255, 1)',
-                                    'rgba(255, 159, 64, 1)'
-                                ],
-                                borderColor: [
-                                    'rgba(211, 99, 12, 1)',
-                                    'rgba(234, 162, 235, 1)',
-                                    'rgba(255, 206, 86, 1)',
-                                    'rgba(34, 142, 192, 1)',
-                                    'rgba(153, 102, 255, 1)',
-                                    'rgba(255, 159, 68, 1)',
-                                    'rgba(255, 99, 132, 1)',
-                                    'rgba(54, 162, 235, 1)',
-                                    'rgba(255, 206, 86, 1)',
-                                    'rgba(75, 192, 192, 1)',
-                                    'rgba(153, 102, 255, 1)',
-                                    'rgba(255, 159, 64, 1)'
-                                ],
+                                data: productData,
+                                backgroundColor: productLabels.map(label => storedProductColors[label]),
+                                borderColor: productLabels.map(label => storedProductColors[label]),
                                 borderWidth: 1
                             }]
-                        },
-                        options: {
-                            scales: {
-                                yAxes: [{
-                                    ticks: {
-                                        beginAtZero: true
-                                    }
-                                }]
-                            }
                         }
                     });
                 </script>
@@ -123,7 +95,7 @@
         </div>
     </div>
 </div>
-<!--End Graphs-->
+<!-- End Graphs -->
 
 {% else %}
 {% include 'dashboard/staff_index.html' %}
